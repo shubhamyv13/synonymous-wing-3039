@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Awesomatic Company</title>
+    <style>
+        #topmost {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #topmost>div:nth-child(1) {
+            width: 25%;
+            background-image: url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1667952255130/css/images/gingham-pattern.svg?yocs=o_s_");
+            height: 40px;
+            background-size: 28px 28px;
+            background-position: calc(50% - 7px) calc(50% - 21px);
+        }
+
+        #topmost>div:nth-child(3) {
+            width: 25%;
+            background-image: url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1667952255130/css/images/gingham-pattern.svg?yocs=o_s_");
+            height: 40px;
+            background-size: 28px 28px;
+            background-position: calc(50% - 7px) calc(50% - 21px);
+        }
+
+        #topmost>div:nth-child(2) {
+            width: 50%;
+            height: 40px;
+            background-color: white;
+            color: #005699;
+            font-size: 13px;
+            font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #topmost>div:nth-child(2)>p>a {
+            font-size: 10px;
+            color: #005699;
+            font-weight: bold;
+        }
+
+        #Sectopmost1 {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            height: 36px;
+            padding: 0px 25px;
+        }
+
+        #Sectopmost1>p {
+            width: 50%;
+            padding: 0px 25px;
+            font-weight: bold;
+            color: #e20887;
+            font-family: Trade Gothic W01 Bold_2, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: 12px;
+
+        }
+
+        #Sectopmost1>p>a {
+            color: #333;
+            text-decoration: underline;
+            font-size: .75rem;
+            text-transform: none;
+            font-weight: normal;
+        }
+
+        #Sectopmostchild>div {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #005699;
+            font-size: 13px;
+            font-family: TrendSansW05-One, Arial, sans-serif;
+            font-weight: bold;
+            margin-right: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        #Sectopmostchild>div>div {
+            margin: 0px 5px;
+        }
+
+        #Sectopmostchild>div>div:nth-child(2)>a {
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            cursor: pointer;
+            margin-top: 2px;
+            margin-left: 8px;
+            color: #333;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+
+        #Sectopmostchild>div>span:nth-child(1)>img {
+            background-size: 18px 23px;
+            width: 18px;
+            height: 23px;
+        }
+
+        #LogoIcon {
+            display: flex;
+
+
+        }
+
+        #LogoIcon>div {
+            width: 33%;
+            border: 2px solid green;
+
+        }
+
+        #logo {
+            width: 340px;
+            height: 34px;
+            margin: auto;
+            margin-top: 27px;
+        }
+
+        #Menu>nav>ul {
+            display: table;
+
+        }
+
+        .Megamenu {
+
+            display: table-cell;
+            font-size: 14px;
+            padding: 13px 28px;
+        }
+
+        .Megamenu>a {
+            text-decoration: none;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            color: #333;
+            position: relative;
+            background-color: #fff;
+
+        }
+
+        #mainBlue {
+            height: 32px;
+            background-color: #d8ecf6;
+            color: #1876a7;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 14px;
+        }
+
+        #offerToday {
+            width: 80%;
+            margin: auto;
+        }
+
+        #offerToday>div:nth-child(1) {
+            height: 32px;
+            width: 100%;
+            margin: auto;
+            background: #e40532;
+            color: #ffffff;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 14px;
+        }
+
+        #offerToday>div:nth-child(3) {
+            text-align: center;
+            margin: 10px 0px;
+            margin-bottom: 50px;
+        }
+
+        #offerToday>div:nth-child(3)>a {
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            letter-spacing: .005em;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: bold;
+            line-height: 1rem;
+            background: #fff;
+            border: none;
+            color: #333;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: none;
+
+        }
+
+        #TodayOffer {
+            width: 80%;
+            margin: auto;
+            margin: auto auto 48px;
+            background: #f2f2f2;
+            padding-bottom: 32px;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+        }
+
+        #TodayOffer>div:nth-child(1) {
+            font-size: 24px;
+            text-align: center;
+            line-height: 2rem;
+            text-transform: none;
+            color: #333;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            letter-spacing: .005em;
+            font-weight: bold;
+            padding: 20px 16px 16px;
+
+        }
+
+        #TodayOffer>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 20px;
+        }
+
+        #TodayOffer>div:nth-child(2)>div {
+            width: 20%;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        #TodayOffer>div:nth-child(2)>div>div>button {
+            width: 100%;
+            padding: 15px 0px;
+            background-color: #333;
+            border-color: #333;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .TDh{
+            color: #005699;
+        }
+        #Img{
+            width: 80%;
+            margin: auto;
+        }
+        #Img>div{
+            margin-bottom: 50px;
+        }
+        #ShopCategory{
+            width: 80%;
+            margin: auto;
+        }
+        #ShopCategory>div:nth-child(1){
+            font-size: 24px;
+            text-align: center;
+            line-height: 2rem;
+            text-transform: none;
+            color: #333;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            letter-spacing: .005em;
+            font-weight: bold;
+            padding: 20px 16px 16px;
+
+        }
+        #ShopCategory>div:nth-child(2){
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        #ShopCategory>div:nth-child(2)>div{
+            width:15%;
+            text-align: center;
+            text-decoration: underline;
+            font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+            color: #333;
+            font-size: 14px;
+        }
+        #NewDream{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        #NewDream>div:nth-child(1)>h2{
+            font-size: 24px;
+            text-align: center;
+            line-height: 2rem;
+            text-transform: none;
+            color: #333;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            letter-spacing: .005em;
+            font-weight: bold;
+        }
+        #NewDream>div:nth-child(1)>div{
+            width: 55%;
+            margin: 0px auto;
+            padding: 0px 0px;
+            color: #666;
+            font-size: 20px;
+
+        }
+        #NewDream>div:nth-child(1)>button{
+           width: 22%;
+           padding: 20px ; 
+           font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+           background-color: #E5E5E5;
+           color: #333333;
+           font-size: 16px;
+           font-weight: bold;
+           border: none;
+        }
+        #NewDream>div:nth-child(1){
+            margin-bottom: 30px;
+        }
+        #Dream{
+            display: flex;
+            justify-content: space-between;
+        }
+        #Dream>div:nth-child(2){
+            display: flex;
+            justify-content: space-around;
+        }
+        #Dream>div:nth-child(2)>div{
+            width: 43%;
+            border: 2px solid green;
+        }
+        #Dream>div:nth-child(2)>div>div{
+            width: 40%;
+            height: 150px;
+            margin: auto;
+            padding-top: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="topmost">
+                <div></div>
+                <div>
+                    <p>Sorry, the free fragrance duos have sold our! Get FREE SHIPPING on $50+ instead! &nbsp &nbsp
+                        Code: FORYOU50 &nbsp <a href=""> DETAILS</a> </p>
+                </div>
+                <div></div>
+            </div>
+            <div id="Sectopmost">
+                <div id="Sectopmost1">
+                    <p>
+                        <span>POINTS. PERKS. EXCLUSIVES. &nbsp</span>
+                        <a href="">Join Rewards!</a>
+                    </p>
+                    <div id="Sectopmostchild">
+                        <div>
+                            <div>
+                                <span><img
+                                        src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1667952255130/images/svg-icons/bopis-icon-small.svg?yocs=o_s_"
+                                        alt=""></span>
+                            </div>
+                            <div>
+                                <span>PICK UP IN STORE</span>
+                                <a href=""><span>Set Store</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="Menu">
+                <nav>
+                    <ul>
+                        <li class="Megamenu">
+                            <a href="">TOP OFFERS</a>
+                            <div class="subMenu"></div>
+                        </li>
+                        <li class="Megamenu">
+                            <a href="">BODY CARE</a>
+                            <div class="subMenu"></div>
+                        </li>
+                        <li class="Megamenu">
+                            <a href="">CANDLES</a>
+                            <div class="subMenu"></div>
+                        </li>
+                        <li class="Megamenu">
+                            <a href="">WALL FLOWERS & AIR FRESHENERS</a>
+                            <div class="subMenu"></div>
+                        </li>
+                        <li class="Megamenu">
+                            <a href="">HAND SOAPS & SANITIZERS</a>
+                            <div class="subMenu"></div>
+                        </li>
+                        <li class="Megamenu">
+                            <a href="">MEN'S SHOP</a>
+                            <div class="subMenu"></div>
+                        </li>
+                        <li class="Megamenu">
+                            <a href="">MOXY</a>
+                            <div class="subMenu"></div>
+                        </li>
+                        <li class="Megamenu">
+                            <a href="">HOLIDAY SHOP</a>
+                            <div class="subMenu"></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main">
+            <div id="mainBlue">My Bath & Body Works Rewards is now available nationwide! Join the VIPs</div>
+            <div id="offerToday">
+                <div>TODAY ONLY!</div>
+                <div><a href=""><img width="100%" src="Media\Home Page\Today'sOffer.gif" alt=""></a></div>
+                <div><a href="">*Promo Details. In store: must show email.</a></div>
+            </div>
+
+            <div id="TodayOffer">
+                <div>TODAY'S TOP OFFERS</div>
+                <div>
+                    <div>
+                        <div>
+                            <h3 class="TDh">Today only!</h3>
+                            <p>All Concentrated Room Sprays</p>
+                            <h3>$3.50</h3>
+                            <p>Limit 20 with code: FLURRY</p>
+                            <button>SHOP</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3 class="TDh">Ends today!</h3>
+                            <p>All Single Wick Candles</p>
+                            <h3>$6.50</h3>
+                            <p>Limit 20 with code: FLURRY</p>
+                            <button>SHOP</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3 class="TDh">Today only!</h3>
+                            <p>All Hand Soaps</p>
+                            <h3>$3.50</h3>
+                            <p>Limit 20 with code: FLURRY</p>
+                            <button>SHOP</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3 class="TDh">Today only!</h3>
+                            <p>All Bath Soaps</p>
+                            <h3>$3.50</h3>
+                            <p>Limit 20 with code: FLURRY</p>
+                            <button>SHOP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Img">
+                <div id="Img1"><img width="100%" src="Media\Home Page\IMG2.gif" alt=""></div>
+                <div id="Img2"><img width="100%" src="Media\Home Page\IMG11.gif" alt=""></div>
+            </div>
+
+            <div id="ShopCategory">
+                <div>SHOP BY CATEGORY</div>
+                <div>
+                    <div>
+                        <div>
+                            <img width="100%" src="Media\Home Page\SBC1.webp" alt="">
+                        </div>
+                        <h4>Shop Body Care</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <img width="100%" src="Media\Home Page\SBC2.webp" alt="">
+                        </div>
+                        <h4>Shop Body Care</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <img width="100%" src="Media\Home Page\SBC3.webp" alt="">
+                        </div>
+                        <h4>Shop Body Care</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <img width="100%" src="Media\Home Page\SBC4.webp" alt="">
+                        </div>
+                        <h4>Shop Body Care</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <img width="100%" src="Media\Home Page\SBC5.webp" alt="">
+                        </div>
+                        <h4>Shop Body Care</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <img width="100%" src="Media\Home Page\SBC6.webp" alt="">
+                        </div>
+                        <h4>Shop Body Care</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="NewDream">
+                <div>
+                    <h2>NEW Dream Bright</h2>
+                    <div>
+                        <p>Let fragrance dreams become reality with a unique blend of sapphire berries, night-blooming orchid and crytalized vanilla</p>
+                    </div>
+                    <button>SHOP THE COLLECTION</button>
+                </div>
+                <div id="Dream">
+                    <div><img src="Media\Home Page\NWB1.webp" alt=""></div>
+                    <div>
+                        <div>
+                            <div>
+                                <img width="100%" height="auto" src="Media\Home Page\NWB2.webp" alt="">
+                            </div>
+                            <h4>New Fragrance</h4>
+                            <h4>Dream Bright</h4>
+                            <p>Eau de Parfum</p>
+                            <h4>$59.50</h4>
+                            <p>Mix & Match Full Size: Buy 3, Get 1 FREE</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img width="60%" height="auto" src="Media\Home Page\NWB3.webp" alt="">
+                            </div>
+                            <h4>New Fragrance</h4>
+                            <h4 style="margin:0px ;">Dream Bright</h4>
+                            <p style="margin:0px ;">Eau de Parfum</p>
+                            <h4 style="padding:0px;">$59.50</h4>
+                            <p style="margin:0px ;">Mix & Match Full Size: Buy 3, Get 1 FREE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="holiday"></div>
+
+            <div id="ProductButton">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div id="Moxy"></div>
+
+            <div id="GoodThings">
+                <h2></h2>
+                <div id="GT">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div id="BBWInsta">
+                <div></div>
+                <div></div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div id="BBW">
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
