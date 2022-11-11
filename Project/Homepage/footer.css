@@ -1,0 +1,80 @@
+.footer1 {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1 .foot-title {
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+
+}
+
+.footer1>div:nth-child(1) {
+    width: 25%;
+}
+
+.footer1>div:nth-child(1)>input {
+    display: block;
+    width: 55%;
+    height: 30px;
+    margin: 8px 0px;
+}
+
+.footer1>div:nth-child(1)>div {
+    margin-bottom: 20px;
+}
+
+.footer1>div:nth-child(1)>div>input {
+    width: 55%;
+    height: 30px;
+    margin: 8px 0px;
+}
+
+.footer1>div:nth-child(1)>div>#submit{
+    width: 30%;
+    height: 35px;
+    font-size: 13px;
+    color: white;
+    background-color: #333333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.footer1 .foot-data {
+    color: #666;
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+hr {
+    background-color: rgb(201, 197, 197);
+    font-weight: bold;
+}
+
+.footer2 {
+    background-color: #F2F2F2;
+    color: #666666;
+}
+
+.footer2>.foot-Data>div:nth-child(1) {
+    width: 90%;
+    padding: 30px 0px 0px 0px;
+    margin: auto;
+    text-align: center;
+    height: 70px;
+}
+
+.footer2>.foot-Data>div:nth-child(2) {
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+}

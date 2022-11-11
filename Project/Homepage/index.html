@@ -6,587 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Awesomatic Company</title>
-    <style>
-        #topmost {
-            display: flex;
-            margin: 0px;
-            padding: 0px;
-
-        }
-
-        #topmost>div:nth-child(1) {
-            width: 25%;
-            background-image: url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1667952255130/css/images/gingham-pattern.svg?yocs=o_s_");
-            height: 40px;
-            background-size: 28px 28px;
-            background-position: calc(50% - 7px) calc(50% - 21px);
-        }
-
-        #topmost>div:nth-child(3) {
-            width: 25%;
-            background-image: url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1667952255130/css/images/gingham-pattern.svg?yocs=o_s_");
-            height: 40px;
-            background-size: 28px 28px;
-            background-position: calc(50% - 7px) calc(50% - 21px);
-        }
-
-        #topmost>div:nth-child(2) {
-            width: 50%;
-            height: 40px;
-            background-color: white;
-            color: #005699;
-            font-size: 13px;
-            font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        #topmost>div:nth-child(2)>p>a {
-            font-size: 10px;
-            color: #005699;
-            font-weight: bold;
-        }
-
-        #Sectopmost1 {
-            display: flex;
-            justify-content: space-between;
-            background-color: #f2f2f2;
-            height: 36px;
-            padding: 0px 25px;
-        }
-
-        #Sectopmost1>p {
-            width: 50%;
-            padding: 0px 25px;
-            font-weight: bold;
-            color: #e20887;
-            font-family: Trade Gothic W01 Bold_2, Arial, sans-serif;
-            text-transform: uppercase;
-            font-size: 12px;
-
-        }
-
-        #Sectopmost1>p>a {
-            color: #333;
-            text-decoration: underline;
-            font-size: .75rem;
-            text-transform: none;
-            font-weight: normal;
-        }
-
-        #Sectopmostchild>div {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            color: #005699;
-            font-size: 13px;
-            font-family: TrendSansW05-One, Arial, sans-serif;
-            font-weight: bold;
-            margin-right: 40px;
-            display: flex;
-            align-items: center;
-        }
-
-        #Sectopmostchild>div>div {
-            margin: 0px 5px;
-        }
-
-        #Sectopmostchild>div>div:nth-child(2)>a {
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            cursor: pointer;
-            margin-top: 2px;
-            margin-left: 8px;
-            color: #333;
-            text-decoration: underline;
-            font-weight: normal;
-        }
-
-        #Sectopmostchild>div>span:nth-child(1)>img {
-            background-size: 18px 23px;
-            width: 18px;
-            height: 23px;
-        }
-
-        #LogoIcon {
-            display: flex;
-
-
-        }
-
-        #LogoIcon>div {
-            width: 33%;
-            border: 2px solid green;
-
-        }
-
-        #logo {
-            width: 340px;
-            height: 34px;
-            margin: auto;
-            margin-top: 27px;
-        }
-
-        #Menu>nav>ul {
-            display: table;
-
-        }
-
-        .Megamenu {
-
-            display: table-cell;
-            font-size: 14px;
-            padding: 13px 28px;
-        }
-
-        .Megamenu>a {
-            text-decoration: none;
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            color: #333;
-            position: relative;
-            background-color: #fff;
-
-        }
-
-        #mainBlue {
-            height: 32px;
-            background-color: #d8ecf6;
-            color: #1876a7;
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            padding-top: 14px;
-        }
-
-        #offerToday {
-            width: 80%;
-            margin: auto;
-        }
-
-        #offerToday>div:nth-child(1) {
-            height: 32px;
-            width: 100%;
-            margin: auto;
-            background: #e40532;
-            color: #ffffff;
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            padding-top: 14px;
-        }
-
-        #offerToday>div:nth-child(3) {
-            text-align: center;
-            margin: 10px 0px;
-            margin-bottom: 50px;
-        }
-
-        #offerToday>div:nth-child(3)>a {
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            letter-spacing: .005em;
-            font-size: 14px;
-            line-height: 16px;
-            font-weight: bold;
-            line-height: 1rem;
-            background: #fff;
-            border: none;
-            color: #333;
-            text-align: center;
-            text-decoration: underline;
-            text-transform: none;
-
-        }
-
-        #TodayOffer {
-            width: 80%;
-            margin: auto;
-            margin: auto auto 48px;
-            background: #f2f2f2;
-            padding-bottom: 32px;
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-        }
-
-        #TodayOffer>div:nth-child(1) {
-            font-size: 24px;
-            text-align: center;
-            line-height: 2rem;
-            text-transform: none;
-            color: #333;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            letter-spacing: .005em;
-            font-weight: bold;
-            padding: 20px 16px 16px;
-
-        }
-
-        #TodayOffer>div:nth-child(2) {
-            display: flex;
-            justify-content: space-between;
-            margin: 0px 20px;
-        }
-
-        #TodayOffer>div:nth-child(2)>div {
-            width: 20%;
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        #TodayOffer>div:nth-child(2)>div>div>button {
-            width: 100%;
-            padding: 15px 0px;
-            background-color: #333;
-            border-color: #333;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .TDh {
-            color: #005699;
-        }
-
-        #Img {
-            width: 80%;
-            margin: auto;
-        }
-
-        #Img>div {
-            margin-bottom: 50px;
-        }
-
-        #ShopCategory {
-            width: 80%;
-            margin: auto;
-        }
-
-        #ShopCategory>div:nth-child(1) {
-            font-size: 24px;
-            text-align: center;
-            line-height: 2rem;
-            text-transform: none;
-            color: #333;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            letter-spacing: .005em;
-            font-weight: bold;
-            padding: 20px 16px 16px;
-
-        }
-
-        #ShopCategory>div:nth-child(2) {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 50px;
-        }
-
-        #ShopCategory>div:nth-child(2)>div {
-            width: 15%;
-            text-align: center;
-            text-decoration: underline;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            color: #333;
-            font-size: 14px;
-        }
-
-        #NewDream {
-            width: 80%;
-            margin: auto;
-            text-align: center;
-        }
-
-        #NewDream>div:nth-child(1)>h2 {
-            font-size: 24px;
-            text-align: center;
-            line-height: 2rem;
-            text-transform: none;
-            color: #333;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            letter-spacing: .005em;
-            font-weight: bold;
-        }
-
-        #NewDream>div:nth-child(1)>div {
-            width: 55%;
-            margin: 0px auto;
-            padding: 0px 0px;
-            color: #666;
-            font-size: 20px;
-
-        }
-
-        #NewDream>div:nth-child(1)>button {
-            width: 22%;
-            padding: 20px;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            background-color: #E5E5E5;
-            color: #333333;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-        }
-
-        #NewDream>div:nth-child(1) {
-            margin-bottom: 30px;
-        }
-
-        #Dream {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #Dream>div:nth-child(2) {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        #Dream>div:nth-child(2)>div {
-            width: 43%;
-            margin: 0px;
-            padding: 0px;
-            border: 2px solid green;
-        }
-
-        #Dream>div:nth-child(2)>div>div {
-            width: 40%;
-            height: 150px;
-            margin: auto;
-            padding-top: 20px;
-            border: 2px solid black;
-        }
-
-        #holiday {
-            width: 80%;
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-
-        #ProductButton {
-            width: 80%;
-            margin: auto;
-            margin-bottom: 50px;
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        #ProductButton>div {
-            width: auto;
-        }
-
-        #ProductButton>div>button {
-            width: 100%;
-            padding: 20px;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            background-color: #333;
-            border-color: #333;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-        }
-
-        #Moxy {
-            width: 80%;
-            margin: auto;
-            margin-bottom: 50px;
-        }
-
-        #BBWInsta {
-            width: 80%;
-            margin: auto;
-            margin-bottom: 50px;
-        }
-
-        #BBWInsta>div:nth-child(1) {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #BBWInsta>div:nth-child(1)>div {
-            width: 33%;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            text-align: center;
-            font-size: 18px;
-            color: #333;
-            letter-spacing: 6px;
-            font-weight: bold;
-        }
-
-        #BBWInsta>div:nth-child(1)>div>p {
-            font-size: 15px;
-            color: #333;
-            margin: 5px;
-            letter-spacing: normal;
-            font-weight: normal;
-
-        }
-
-        #BBWInsta>div:nth-child(2) {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        #BBWInsta>div:nth-child(2)>div {
-            width: 20%;
-        }
-
-        #BBW {
-            width: 51%;
-            margin: auto;
-            margin-bottom: 200px;
-        }
-
-        #BBW>div:nth-child(1) {
-            width: 100%;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            text-align: center;
-            font-size: 25px;
-            color: #333;
-            letter-spacing: 2px;
-
-        }
-
-        #BBW>div:nth-child(2)>p {
-            font-size: 14px;
-            color: #333;
-            text-align: center;
-            margin: 5px;
-            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
-            letter-spacing: normal;
-            font-weight: normal;
-            line-height: 20px;
-
-        }
-
-        #BBW>div:nth-child(2)>p>a {
-            text-decoration: underline;
-            color: #333;
-        }
-
-        .footer1 {
-            width: 80%;
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 80px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .footer1 .foot-title {
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            font-weight: 400;
-            font-size: 13px;
-            text-transform: uppercase;
-            color: #333;
-            font-weight: 600;
-
-        }
-
-        .footer1>div:nth-child(1) {
-            width: 25%;
-        }
-
-        .footer1>div:nth-child(1)>input {
-            display: block;
-            width: 55%;
-            height: 30px;
-            margin: 8px 0px;
-        }
-
-        .footer1>div:nth-child(1)>div {
-            margin-bottom: 20px;
-        }
-
-        .footer1>div:nth-child(1)>div>input {
-            width: 55%;
-            height: 30px;
-            margin: 8px 0px;
-        }
-
-        .footer1>div:nth-child(1)>div>button {
-            width: 30%;
-            height: 35px;
-            font-size: 13px;
-            color: white;
-            background-color: #333333;
-            font-weight: bold;
-        }
-
-        .footer1 .foot-data {
-            color: #666;
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-        }
-
-        hr {
-            background-color: rgb(201, 197, 197);
-            font-weight: bold;
-        }
-
-        .footer2 {
-            background-color: #F2F2F2;
-            color: #666666;
-        }
-
-        .footer2>.foot-Data>div:nth-child(1) {
-            width: 90%;
-            padding: 30px 0px 0px 0px;
-            margin: auto;
-            text-align: center;
-            height: 70px;
-        }
-
-        .footer2>.foot-Data>div:nth-child(2) {
-            text-align: center;
-            margin: 0px;
-            padding: 0px 0px 20px 0px;
-        }
-
-        #subMenu1 {
-            position: absolute;
-            z-index: 500;
-            background-color: white;
-            box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-            padding: 10px;
-            opacity:0;
-            visibility: hidden; 
-             max-width: 1500px;
-            width: 100%;
-            left: 50%;
-            transform: translate(-51%); 
-        }
-        #subMenu1{
-             width: 100%;
-             height: 300px;
-            display: flex;
-            justify-content: center;
-            padding: 30px 20px;
-            
-        }
-        #subMenu1>div{
-            width: 17%;
-            text-align: left;
-            /* border-left: 0.5px solid #666;
-            border-right: 0.5px solid #666; */
-        }
-        #subMenu1>div>h3{
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            font-size: 17px;
-            text-transform: uppercase;
-            color: #333;
-            font-weight: 600;
-        }
-        #subMenu1>div>p{
-            color: #666;
-            font-family: Trade Gothic W01 Light, Arial, sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -629,35 +51,40 @@
                     <ul>
                         <li class="Megamenu">
                             <a href="">TOP OFFERS</a>
-                            <div class="subMenu"></div>
+                            <div class="subMenu1"></div>
                         </li>
                         <li class="Megamenu">
                             <a id="BC" href="">BODY CARE</a>
-                            <div id="subMenu1">
+                            <div class="subMenu">
                                 <div>
                                     <h3>BATH & SHOWER</h3>
+                                    <hr>
                                     <p>All Bath & Shower</p>
                                     <p>Body Wash & Shower Gel</p>
                                     <p>Body Scrub</p>
                                 </div>
                                 <div>
                                     <h3>MOISTURIZERS</h3>
+                                    <hr>
                                     <p>All Moisturizers</p>
                                     <p>Body Lotion</p>
                                     <p>Body Cream</p>
                                 </div>
                                 <div>
                                     <h3>FRAGRANCE</h3>
+                                    <hr>
                                     <p>All Fragrance</p>
                                     <p>Body Spray & Mists</p>
                                     <p>Perfume & Cologen</p>
                                 </div>
                                 <div>
                                     <h3>NEW & NOW</h3>
+                                    <hr>
                                     <p>All Aromatherapy</p>
                                 </div>
                                 <div>
                                     <h3>EXPLORE BODY CARE</h3>
+                                    <hr>
                                     <p>Buy 3, Get 1 FREE</p>
                                     <p>2/$10, 4/$18, 6/$24</p>
                                     <p>Buy 3, Get 1 FREE Soap</p>
@@ -666,27 +93,151 @@
                         </li>
                         <li class="Megamenu">
                             <a href="">CANDLES</a>
-                            <div class="subMenu"></div>
+                            <div class="subMenu">
+                                <div>
+                                    <h3>ALL CANDLES</h3>
+                                    <hr>
+                                    <p>3-Wick Candles</p>
+                                    <p>Single Wick Candles</p>
+                                    <p>Candle Holders & Accessories</p>
+                                    <p>The White Barn Shop</p>
+                                </div>
+                                <div>
+                                    <h3>EXPLORE CANDLES</h3>
+                                    <hr>
+                                    <p>Buy 1, Get 1 FREE Candle</p>
+                                </div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </li>
                         <li class="Megamenu">
                             <a href="">WALL FLOWERS & AIR FRESHENERS</a>
-                            <div class="subMenu"></div>
+                            <div class="subMenu">
+                                <div>
+                                    <h3>WALL FLOWERS</h3>
+                                    <hr>
+                                    <p>All Wallflowers</p>
+                                    <p>Wallflowers Plugs</p>
+                                    <p>Auto Refresh Wallflowers</p>
+                                </div>
+                                <div>
+                                    <h3>AIR FRESHENERS</h3>
+                                    <hr>
+                                    <p>Room Sprays & Mists</p>
+                                    <p>Car Fragrance</p>
+                                </div>
+                                <div>
+                                    <h3>EXPLORE WALL FLOWERS & AIR FRESHENERS</h3>
+                                    <hr>
+                                    <p>5/$25 Wall Fragrance Refills</p>
+                                    <p>3/$22 Room Sprays</p>
+                                    <p>3/$10 Car Fragrance Refills</p>
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </li>
                         <li class="Megamenu">
                             <a href="">HAND SOAPS & SANITIZERS</a>
-                            <div class="subMenu"></div>
+                            <div class="subMenu">
+                                <div>
+                                    <h3>HAND SOAPS</h3>
+                                    <hr>
+                                    <p>All Hand Soaps</p>
+                                    <p>Foaming Soaps</p>
+                                    <p>Gel Soaps</p>
+                                    <p>Soap Holders</p>
+                                    <p>Gentle & Clean Hand Soaps</p>
+                                </div>
+                                <div>
+                                    <h3>HAND SANITIZERS</h3>
+                                    <hr>
+                                    <p>All Hand Sanitizers</p>
+                                    <p>PocketBac Hand Sanitizers</p>
+                                    <p>Hand Sanitizer Sprays</p>
+                                    <p>Full-Size Sanitizers</p>
+                                    <p>Hand Sanitizer Holders</p>
+                                </div>
+                                <div>
+                                    <h3>EXPLORE HAND SOAPS & SANITIZERS OFFERS</h3>
+                                    <hr>
+                                    <p>5/$25 Hand Soaps</p>
+                                    <p>$8 Hand Sanitizer 5-Packs</p>
+                                    <p>3/$12 Hand Sanitizer Sprays</p>
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </li>
                         <li class="Megamenu">
                             <a href="">MEN'S SHOP</a>
-                            <div class="subMenu"></div>
+                            <div class="subMenu">
+                                <div>
+                                    <h3>THE MEN'S SHOP</h3>
+                                    <hr>
+                                    <p>All Men's Body care</p>
+                                    <p>Body Wash & Shower Gel</p>
+                                    <p>Moisturizers</p>
+                                    <p>Body Spray & Cologne</p>
+                                    <p>Home Fragrance</p>
+                                    <p>Hand Sanitizers</p>
+                                </div>
+                                <div>
+                                    <h3>EXPLORE MEN's SHOP OFFERS</h3>
+                                    <hr>
+                                    <p>5/$25 Hand Soaps</p>
+                                    <p>$8 Hand Sanitizer 5-Packs</p>
+                                    <p>3/$12 Hand Sanitizer Sprays</p>
+                                </div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </li>
                         <li class="Megamenu">
                             <a href="">MOXY</a>
-                            <div class="subMenu"></div>
+                            <div class="subMenu1"></div>
                         </li>
                         <li class="Megamenu">
                             <a href="">HOLIDAY SHOP</a>
-                            <div class="subMenu"></div>
+                            <div class="subMenu">
+                                <div>
+                                    <h3>GIFTS BY PRICE</h3>
+                                    <hr>
+                                    <p>Christmas COllection</p>
+                                    <p>$15 & Under Gifts</p>
+                                    <p>$40 & Under Gifts</p>
+                                    <p>Gift Sets</p>
+                                    <p>Stocking Stuffers</p>
+                                </div>
+                                <div>
+                                    <h3>NEW & NOW</h3>
+                                    <hr>
+                                    <p>New Arrivals</p>
+                                    <p>Aromatherapy Shop</p>
+                                    <p>Best Sellers</p>
+                                    <p>Get Inspired</p>
+                                    <p>Shop By Fragrance</p>
+                                </div>
+                                <div>
+                                    <h3>FEATURED</h3>
+                                    <hr>
+                                    <p>Make Joy Happen Gift List</p>
+                                    <p>Gift Boxes & Bags</p>
+                                    <p>Accessories</p>
+                                </div>
+                                <div>
+                                    <h3>GIFTS BY RECIPIENT</h3>
+                                    <hr>
+                                    <p>Gifts for Her</p>
+                                    <p>Gifts for Him</p>
+                                    <p>Gifts for Everyone</p>
+                                    <p>Housewarming Gifts</p>
+                                </div>
+                                <div></div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -935,7 +486,7 @@
                         <label class="foot-data" for="">Confirm Email</label>
                         <div>
                             <input type="text" class="foot-input">
-                            <button>SUBMIT</button>
+                            <button id="submit">SUBMIT</button>
                         </div>
 
                         <label for="" class="foot-data">Get Connected</label>
@@ -995,43 +546,3 @@
 </body>
 
 </html>
-
-<script>
-
-    document.querySelector("#BC").addEventListener("mouseover", DisplayBC1);
-
-    document.querySelector("#BC").addEventListener("mouseout", Displayset);
-
-    // document.querySelector("#subMenu1").addEventListener("mouseover", DisplayBC1);
-
-    document.querySelector("#subMenu1").addEventListener("mouseout", Displayset);
-
-    function DisplayBC1() {
-          
-         document.querySelector("#subMenu1").style.visibility= "visible";
-         document.querySelector("#subMenu1").style.opacity= "1";
-    } 
-    
-    
-
-    function Displayset(){
-
-        if(document.querySelector("#subMenu1").addEventListener("mouseover", DisplayBC1)){
-            DisplayBC1();
-        }
-        else {
-            let timeout= setTimeout(DisplayBC2, 1000);
-        }
-        
-    }
-
-    function DisplayBC2() {
-          
-          document.querySelector("#subMenu1").style.visibility= "hidden";
-          document.querySelector("#subMenu1").style.opacity= "0";
-    }      
-
-    
-
- 
-</script>

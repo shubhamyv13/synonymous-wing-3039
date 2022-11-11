@@ -1,0 +1,318 @@
+#mainBlue {
+    height: 32px;
+    background-color: #d8ecf6;
+    color: #1876a7;
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 14px;
+}
+
+#offerToday {
+    width: 80%;
+    margin: auto;
+}
+
+#offerToday>div:nth-child(1) {
+    height: 32px;
+    width: 100%;
+    margin: auto;
+    background: #e40532;
+    color: #ffffff;
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 14px;
+}
+
+#offerToday>div:nth-child(3) {
+    text-align: center;
+    margin: 10px 0px;
+    margin-bottom: 50px;
+}
+
+#offerToday>div:nth-child(3)>a {
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    letter-spacing: .005em;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    line-height: 1rem;
+    background: #fff;
+    border: none;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: none;
+
+}
+
+#TodayOffer {
+    width: 80%;
+    margin: auto;
+    margin: auto auto 48px;
+    background: #f2f2f2;
+    padding-bottom: 32px;
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+}
+
+#TodayOffer>div:nth-child(1) {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2rem;
+    text-transform: none;
+    color: #333;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    letter-spacing: .005em;
+    font-weight: bold;
+    padding: 20px 16px 16px;
+
+}
+
+#TodayOffer>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+#TodayOffer>div:nth-child(2)>div {
+    width: 20%;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#TodayOffer>div:nth-child(2)>div>div>button {
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #333;
+    border-color: #333;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.TDh {
+    color: #005699;
+}
+
+#Img {
+    width: 80%;
+    margin: auto;
+}
+
+#Img>div {
+    margin-bottom: 50px;
+}
+
+#ShopCategory {
+    width: 80%;
+    margin: auto;
+}
+
+#ShopCategory>div:nth-child(1) {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2rem;
+    text-transform: none;
+    color: #333;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    letter-spacing: .005em;
+    font-weight: bold;
+    padding: 20px 16px 16px;
+
+}
+
+#ShopCategory>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#ShopCategory>div:nth-child(2)>div {
+    width: 15%;
+    text-align: center;
+    text-decoration: underline;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    color: #333;
+    font-size: 14px;
+}
+
+#NewDream {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#NewDream>div:nth-child(1)>h2 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2rem;
+    text-transform: none;
+    color: #333;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    letter-spacing: .005em;
+    font-weight: bold;
+}
+
+#NewDream>div:nth-child(1)>div {
+    width: 55%;
+    margin: 0px auto;
+    padding: 0px 0px;
+    color: #666;
+    font-size: 20px;
+
+}
+
+#NewDream>div:nth-child(1)>button {
+    width: 22%;
+    padding: 20px;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    background-color: #E5E5E5;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+#NewDream>div:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+#Dream {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Dream>div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Dream>div:nth-child(2)>div {
+    width: 43%;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid green;
+}
+
+#Dream>div:nth-child(2)>div>div {
+    width: 40%;
+    height: 150px;
+    margin: auto;
+    padding-top: 20px;
+    border: 2px solid black;
+}
+
+#holiday {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#ProductButton {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#ProductButton>div {
+    width: auto;
+}
+
+#ProductButton>div>button {
+    width: 100%;
+    padding: 20px;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    background-color: #333;
+    border-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+#Moxy {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#BBWInsta {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#BBWInsta>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#BBWInsta>div:nth-child(1)>div {
+    width: 33%;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+#BBWInsta>div:nth-child(1)>div>p {
+    font-size: 15px;
+    color: #333;
+    margin: 5px;
+    letter-spacing: normal;
+    font-weight: normal;
+
+}
+
+#BBWInsta>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#BBWInsta>div:nth-child(2)>div {
+    width: 20%;
+}
+
+#BBW {
+    width: 51%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+#BBW>div:nth-child(1) {
+    width: 100%;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+    letter-spacing: 2px;
+
+}
+
+#BBW>div:nth-child(2)>p {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 5px;
+    font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+    letter-spacing: normal;
+    font-weight: normal;
+    line-height: 20px;
+
+}
+
+#BBW>div:nth-child(2)>p>a {
+    text-decoration: underline;
+    color: #333;
+}
