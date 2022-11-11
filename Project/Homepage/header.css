@@ -1,0 +1,189 @@
+#topmost {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#topmost>div:nth-child(1) {
+    width: 25%;
+    background-image: url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1667952255130/css/images/gingham-pattern.svg?yocs=o_s_");
+    height: 40px;
+    background-size: 28px 28px;
+    background-position: calc(50% - 7px) calc(50% - 21px);
+}
+
+#topmost>div:nth-child(3) {
+    width: 25%;
+    background-image: url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1667952255130/css/images/gingham-pattern.svg?yocs=o_s_");
+    height: 40px;
+    background-size: 28px 28px;
+    background-position: calc(50% - 7px) calc(50% - 21px);
+}
+
+#topmost>div:nth-child(2) {
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    color: #005699;
+    font-size: 13px;
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#topmost>div:nth-child(2)>p>a {
+    font-size: 10px;
+    color: #005699;
+    font-weight: bold;
+}
+
+#Sectopmost1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    height: 36px;
+    padding: 0px 25px;
+}
+
+#Sectopmost1>p {
+    width: 50%;
+    padding: 0px 25px;
+    font-weight: bold;
+    color: #e20887;
+    font-family: Trade Gothic W01 Bold_2, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+
+#Sectopmost1>p>a {
+    color: #333;
+    text-decoration: underline;
+    font-size: .75rem;
+    text-transform: none;
+    font-weight: normal;
+}
+
+#Sectopmostchild>div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #005699;
+    font-size: 13px;
+    font-family: TrendSansW05-One, Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#Sectopmostchild>div>div {
+    margin: 0px 5px;
+}
+
+#Sectopmostchild>div>div:nth-child(2)>a {
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 8px;
+    color: #333;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#Sectopmostchild>div>span:nth-child(1)>img {
+    background-size: 18px 23px;
+    width: 18px;
+    height: 23px;
+}
+
+#LogoIcon {
+    display: flex;
+
+
+}
+
+#LogoIcon>div {
+    width: 33%;
+    border: 2px solid green;
+
+}
+
+#logo {
+    width: 340px;
+    height: 34px;
+    margin: auto;
+    margin-top: 27px;
+}
+
+#Menu>nav>ul {
+    display: table;
+
+}
+
+.Megamenu {
+
+    display: table-cell;
+    font-size: 14px;
+    padding: 13px 28px;
+}
+
+.Megamenu>a {
+    text-decoration: none;
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    color: #333;
+    position: relative;
+    background-color: #fff;
+
+}
+.subMenu {
+    position: absolute;
+    z-index: 500;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 10px;
+    margin: 20px;
+    opacity:0;
+    visibility: hidden; 
+     max-width: 1500px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-51%); 
+}
+.subMenu{
+     width: 100%;
+     height: 300px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    padding: 30px 20px;
+    
+}
+.subMenu>div{
+    width: 17%;
+    text-align: center;
+    /* border-left: 0.1px  solid #666;
+    border-right:  solid #666; */
+}
+.subMenu>div>h3{
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+}
+.subMenu>div>p{
+    color: #666;
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+li.Megamenu:hover .subMenu{
+    margin-top: 10px;
+    opacity: 2;
+    visibility: visible;
+}
+.subMenu>div>hr{
+    width: 80%;
+}
