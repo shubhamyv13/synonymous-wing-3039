@@ -142,8 +142,9 @@
         #container1>div>img {
             width: 70%;
         }
-    
-        .h3, .p1{
+
+        .h3,
+        .p1 {
             margin: 0px;
             padding: 0px;
         }
@@ -165,11 +166,12 @@
 
         #container1>div>div>p {
             color: #666;
-            margin:7px 0px;
+            margin: 7px 0px;
             font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
             font-size: 12px;
         }
-        #container1>div>button{
+
+        #container1>div>button {
             width: 70%;
             padding: 10px 13px;
             font-size: 11px;
@@ -178,7 +180,8 @@
             color: #ffffff;
             font-weight: bold;
         }
-        #red1{
+
+        #red1 {
             color: red;
         }
     </style>
@@ -616,47 +619,63 @@
 
 <script>
 
-    let cartJS= JSON.parse(localStorage.getItem("cartLS")) || [];
-    
-    let bag=[];
-    fetch("./ProductData.json")
+    let cartJS = JSON.parse(localStorage.getItem("cartLS")) || [];
+
+    let cartobj = JSON.parse(localStorage.getItem("cartobjLS")) || {};
+
+    let bag = [];
+    let url = "./ProductData.json";
+    fetch(url)
         .then((res) => (res.json()))
         .then((dataM) => {
 
-            bag= dataM;
-            DisplayData(dataM)});
+            bag = dataM;
+            DisplayData(dataM)
+        });
 
 
-           
+
     function DisplayData(dataM) {
- 
-        document.querySelector("#container1").innerHTML= "";
+        
+        document.querySelector("#container1").innerHTML = "";
         dataM.forEach(elem => {
-
+            
             let div1 = document.createElement("div");
             let img = document.createElement("img");
             img.src = elem.img;
             let div2 = document.createElement("div");
             let name = document.createElement("h3");
-            name.setAttribute("class","h3");
+            name.setAttribute("class", "h3");
             name.innerText = elem.brand;
             let details = document.createElement("p");
-            details.setAttribute("class","p1");
+            details.setAttribute("class", "p1");
             details.innerText = elem.category;
             let price = document.createElement("h3");
-            price.setAttribute("class","h3");
+            price.setAttribute("class", "h3");
             price.innerText = "$" + elem.price;
             let offer = document.createElement("p");
-            offer.setAttribute("class","p1");
-            offer.style.color= "red";
+            offer.setAttribute("class", "p1");
+            offer.style.color = "red";
             offer.innerText = elem.details;
             let button = document.createElement("button");
             button.innerText = "ADD TO BAG";
-            button.addEventListener("click", function() {
-                
-                cartJS= JSON.parse(localStorage.getItem("cartLS"));
-                cartJS.push(elem);
-                localStorage.setItem("cartLS",JSON.stringify(cartJS));
+            button.addEventListener("click", function () {
+                 
+                cartobj= JSON.parse(localStorage.getItem("cartobjLS")) || [];
+                if (cartobj[elem.id] === undefined) {
+
+                    cartobj[elem.id] = 1;
+                    cartobj["price"]= elem.price;
+                    localStorage.setItem("cartobjLS",JSON.stringify(cartobj));
+                    cartJS = JSON.parse(localStorage.getItem("cartLS")) || [];
+                    cartJS.push(elem);
+                    localStorage.setItem("cartLS", JSON.stringify(cartJS));
+                    return alert("Product Added to Cart");
+                }
+                else{
+                    return alert("Product Already in Cart");
+                }
+
 
             })
 
@@ -667,57 +686,57 @@
 
     }
 
-function PT(){
-   let a=document.querySelector("#PT1").value;
-   console.log(a);
-   
-   let f_data= bag.filter(elem => {
+    function PT() {
+        let a = document.querySelector("#PT1").value;
+        console.log(a);
 
-     return elem.category == a;
-   })
+        let f_data = bag.filter(elem => {
 
-    DisplayData(f_data);
-}
+            return elem.category == a;
+        })
 
-function PT2(){
-   let a=document.querySelector("#PT2").value;
-   
-   let f_data= bag.filter(elem => {
-
-     return elem.fn == a;
-   })
-
-    DisplayData(f_data);
-}
-
-function PT3(){
-   let a=document.querySelector("#PT3").value;
-   
-   let f_data= bag.filter(elem => {
-
-     return elem.fc == a;
-   })
-
-    DisplayData(f_data);
-}
-
-
-function PT4(){
-
-    let a= document.querySelector("#PT4").value;
-    console.log(a);
-
-    if(a=="Price Low to High"){
-       bag.sort((a,b) => (a.price - b.price));
-    }
-    else if(a=="Price High to Low") {
-        bag.sort((a,b) => (b.price - a.price));
-    }
-    else if(a=="Best Sellers"){
-        bag.sort((a,b) => (b.bs - a.bs));
+        DisplayData(f_data);
     }
 
-    DisplayData(bag);
-}
+    function PT2() {
+        let a = document.querySelector("#PT2").value;
+
+        let f_data = bag.filter(elem => {
+
+            return elem.fn == a;
+        })
+
+        DisplayData(f_data);
+    }
+
+    function PT3() {
+        let a = document.querySelector("#PT3").value;
+
+        let f_data = bag.filter(elem => {
+
+            return elem.fc == a;
+        })
+
+        DisplayData(f_data);
+    }
+
+
+    function PT4() {
+
+        let a = document.querySelector("#PT4").value;
+        console.log(a);
+
+        if (a == "Price Low to High") {
+            bag.sort((a, b) => (a.price - b.price));
+        }
+        else if (a == "Price High to Low") {
+            bag.sort((a, b) => (b.price - a.price));
+        }
+        else if (a == "Best Sellers") {
+            bag.sort((a, b) => (b.bs - a.bs));
+        }
+
+        DisplayData(bag);
+    }
 
 </script>

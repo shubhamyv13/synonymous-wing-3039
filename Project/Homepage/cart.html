@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +22,9 @@
         #container1>div>img {
             width: 70%;
         }
-    
-        .h3, .p1{
+
+        .h3,
+        .p1 {
             margin: 0px;
             padding: 0px;
         }
@@ -44,11 +46,12 @@
 
         #container1>div>div>p {
             color: #666;
-            margin:7px 0px;
+            margin: 7px 0px;
             font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
             font-size: 12px;
         }
-        #container1>div>button{
+
+        #container1>div>button {
             width: 70%;
             padding: 10px 13px;
             font-size: 11px;
@@ -57,11 +60,13 @@
             color: #ffffff;
             font-weight: bold;
         }
-        #red1{
+
+        #red1 {
             color: red;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div id="topmost">
@@ -293,7 +298,10 @@
             </nav>
         </div>
     </header>
-
+    
+    <div id="total">
+        <h3 id="totalAll"></h3>
+    </div>
     <div id="container1">
 
     </div>
@@ -367,64 +375,96 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
 
 <script>
-   
-   let cartJS2= JSON.parse(localStorage.getItem("cartLS")) || [];
-   console.log(cartJS2);
 
-   let cartQJS= localStorage.getItem("cartQLS") || 1;
+    let cartJS2 = JSON.parse(localStorage.getItem("cartLS")) || [];
 
-   DisplayData(cartJS2,cartQJS);
+    let cartobj2 = JSON.parse(localStorage.getItem("cartobjLS")) || {};
 
-   function DisplayData(cartJS2,cartQJS) {
- 
- document.querySelector("#container1").innerHTML= "";
- cartJS2.forEach(elem => {
-     
-     let div1 = document.createElement("div");
-     let img = document.createElement("img");
-     img.src = elem.img;
-     let div2 = document.createElement("div");
-     let name = document.createElement("h3");
-     name.setAttribute("class","h3");
-     name.innerText = elem.brand;
-     let details = document.createElement("p");
-     details.setAttribute("class","p1");
-     details.innerText = elem.category;
-     let price = document.createElement("h3");
-     price.setAttribute("class","h3");
-     price.innerText = "$" + elem.price;
-     let offer = document.createElement("p");
-     offer.setAttribute("class","p1");
-     offer.style.color= "red";
-     offer.innerText = elem.details;
-     let plus= document.createElement("button");
-     plus.innerHTML= "+";
-     plus.addEventListener("click", function(){
-      
-         if(elem["quant"]===undefined){
-            elem["quant"]=2;
-         }
-         else{
-            elem.quant++;
-         }
-     })
-     let quant= document.createElement("span");
-     quant.innerText= elem["quant"];
-     let subt= document.createElement("button");
-     subt.innerHTML="-";
+    let total=0;
 
+    DisplayData(cartJS2);
 
-     div2.append(name, details, price, offer,plus,quant,subt);
-     div1.append(img, div2);
-     document.querySelector("#container1").append(div1);
- });
+    function DisplayData(cartJS2) {
+        document.querySelector("#container1").innerHTML = "";
+        cartJS2.forEach((elem,i) => {
+            
+            total+= (elem.price*(cartobj2[elem.id]));
+            let div1 = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = elem.img;
+            let div2 = document.createElement("div");
+            let name = document.createElement("h3");
+            name.setAttribute("class", "h3");
+            name.innerText = elem.brand;
+            let details = document.createElement("p");
+            details.setAttribute("class", "p1");
+            details.innerText = elem.category;
+            let price = document.createElement("h3");
+            price.setAttribute("class", "h3");
+            price.innerText = "$" + elem.price;
+            let offer = document.createElement("p");
+            offer.setAttribute("class", "p1");
+            offer.style.color = "red";
+            offer.innerText = elem.details;
+            let plus = document.createElement("button");
+            plus.innerHTML = "+";
+            plus.addEventListener("click", function () {
+                cartobj2[elem.id]++;
+                
+                localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
+                total+= (elem.price*(cartobj2[elem.id]));
+                DisplayData(cartJS2);
+            })
+            let quant = document.createElement("span");
+            quant.innerText = cartobj2[elem.id];
+            let subt = document.createElement("button");
+            subt.innerHTML = "-";
+            subt.addEventListener("click", function () {
+                if (cartobj2[elem.id] > 1) {
+                    cartobj2[elem.id]--;
+                    localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
+                    total-= (elem.price*(cartobj2[elem.id]));
+                    DisplayData(cartJS2);
+                }
+                else if(cartobj2[elem.id]==1){
+                    delete cartobj2[elem.id];
+                    localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
+                    total-= (elem.price*(cartobj2[elem.id]));
+                    Deleter(i);
+                    
+                }
+            })
+            let remove = document.createElement("button");
+            remove.innerText = "Remove";
+            remove.addEventListener("click", function (event) {
+                event.target.parentNode.parentNode.remove();
+                Deleter(i);
+            });
+            remove.addEventListener("click", function () {
+                delete cartobj2[elem.id];
+                localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
+            })
 
-}
-    
+            div2.append(name, details, price, offer, plus, quant, subt, remove);
+            div1.append(img, div2);
+            document.querySelector("#totalAll").innerText= total;
+            document.querySelector("#container1").append(div1);
+        });
+
+    }
+
+    function Deleter(i) {
+
+        cartJS2.splice(i, 1);
+        localStorage.setItem("cartLS", JSON.stringify(cartJS2));
+        DisplayData(cartJS2);
+    }
+
 
 </script>

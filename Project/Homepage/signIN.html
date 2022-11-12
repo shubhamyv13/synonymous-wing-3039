@@ -366,15 +366,15 @@
             </div>
             
             <div>
-                <label class="l1" for="">Email Address</label>
-                <input class="i1" type="text">
+                <label  class="l1" for="">Email Address</label>
+                <input required id="mail" class="i1" type="text">
                 <label class="l1" for="">Password</label>
-                <input class="i1" type="text">
+                <input required id="password" class="i1" type="password">
                 <span><a id="forget" href="">Forgor Password</a></span>
                 <input id="i3" type="checkbox">
                 <label class="l1" for="">Remember Me</label>
                 <p class="l1"><a href="">Privacy Policy</a></p>
-                <div class="button"><button>SIGN IN</button></div>
+                <div class="button"><button id="signIn">SIGN IN</button></div>
             </div>
 
             
@@ -466,3 +466,42 @@
     </footer>
 </body>
 </html>
+
+<script>
+    signupJS2= JSON.parse(localStorage.getItem("signupLS")) || [];
+
+    document.querySelector("#signIn").addEventListener("click", signIN);
+
+    document.querySelector("#signIn").addEventListener("click", Reset);
+
+    function signIN(){
+
+        let email= document.querySelector("#mail").value;
+        let pass= document.querySelector("#password").value;
+
+        if(email==="" || pass===""){
+            return alert("Fill the Details");
+        }
+
+        else{
+            signupJS2.forEach(elem => {
+            
+            if(elem.mail==email && elem.password==pass){
+               return  alert("Sign in Successful.");
+
+            }
+        });
+
+             return   alert("Wrong Credentials.");
+        }
+    }
+ 
+
+    function Reset(){
+        document.querySelector("#mail").value="";
+        document.querySelector("#password").value="";
+    }
+
+
+
+</script>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,50 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="index.css">
     <style>
-        #first{
+        #first {
             width: 60%;
             margin: auto;
             margin-top: 40px;
             margin-bottom: 30px;
         }
-        #third>h2{
+
+        #third>h2 {
             text-align: left;
             font-size: 24px;
-            font-family: Trade Gothic W01 Light,Arial,sans-serif;
-            color:#333333;   
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            color: #333333;
         }
-        #third{
+
+        #third {
             width: 60%;
             margin: auto;
             text-align: left;
         }
-        #sec{
+
+        #sec {
             width: 60%;
             margin: auto;
             border-top: 1px solid #666666;
             padding-top: 20px;
         }
-        #sec>div:nth-child(1){
+
+        #sec>div:nth-child(1) {
             width: 45%;
             margin: auto;
         }
-        #sec>div:nth-child(1)>p{
+
+        #sec>div:nth-child(1)>p {
             text-align: center;
-        
+
         }
-        #sec>div:nth-child(1)>p>a{
-            font-family: Trade Gothic W01 Light,Arial,sans-serif;
+
+        #sec>div:nth-child(1)>p>a {
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
             font-size: 14px;
             color: #666666;
         }
-        .i1{
+
+        .i1 {
             display: block;
             display: block;
             width: 100%;
@@ -54,12 +62,14 @@
             margin: 7px 0px 28px 0px;
 
         }
-        .l1{
+
+        .l1 {
             font-size: 14px;
             color: #666666;
-            font-family: Trade Gothic W01 Light,Arial,sans-serif;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
         }
-        .button{
+
+        .button {
             width: 90%;
             margin: auto;
             margin-top: 20px;
@@ -67,28 +77,32 @@
             display: flex;
             justify-content: center;
         }
-        button{
+
+        button {
             background-color: #333333;
             color: white;
             padding: 10px 30px;
             font-size: 14px;
 
         }
-        #fourth{
+
+        #fourth {
             width: 60%;
             margin: auto;
             text-align: center;
             color: #666666;
             font-size: 14px;
-            font-family: Trade Gothic W01 Light,Arial,sans-serif; 
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
             margin-top: 40px;
             margin-bottom: 130px;
         }
-        .l1>span{
+
+        .l1>span {
             color: red;
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -325,25 +339,29 @@
     <div id="mainBlue">My Bath & Body Works Rewards is now available nationwide! Join the VIPs</div>
 
     <div id="first">
-        <img width="100%" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_" alt="">
+        <img width="100%"
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_"
+            alt="">
     </div>
-    <div id="third"><h2>Create an Account</h2></div>
+    <div id="third">
+        <h2>Create an Account</h2>
+    </div>
     <div id="sec">
         <div>
             <label class="l1" for=""><span>*</span>First Name</label>
-            <input class="i1" type="text">
+            <input id="fname" required class="i1" type="text">
             <label class="l1" for=""><span>*</span>Last Name</label>
-            <input class="i1" type="text">
+            <input id="lname" required class="i1" type="text">
             <label for="" class="l1"><span>*</span>Email</label>
-            <input type="text" class="i1">
+            <input required id="mail" type="text" class="i1">
             <label for="" class="l1"><span>*</span>Confirm Email</label>
-            <input type="text" class="i1">
+            <input id="cmail" required type="text" class="i1">
             <label for="" class="l1"><span>*</span>Phone</label>
-            <input type="number" class="i1">
+            <input id="phone" required type="number" class="i1">
             <label for="" class="l1"><span>*</span>Password</label>
-            <input type="text" class="i1">
+            <input required id="password" type="password" class="i1">
             <p class="l1"><a href="">Privacy Policy</a></p>
-            <div class="button"><button>CREATE ACCOUNT</button></div>
+            <div class="button"><button id="CA">CREATE ACCOUNT</button></div>
         </div>
 
         <div id="fourth">
@@ -421,4 +439,42 @@
         </div>
     </footer>
 </body>
+
 </html>
+
+<script>
+    document.querySelector("#CA").addEventListener("click", Signup);
+    document.querySelector("#CA").addEventListener("click", Reset);
+
+    let signupJS = JSON.parse(localStorage.getItem("signupLS")) || [];
+
+    function Signup() {
+
+        let signupJS = JSON.parse(localStorage.getItem("signupLS")) || [];
+
+        let mail = document.querySelector("#mail").value;
+        let password = document.querySelector("#password").value;
+
+        if (mail === "" || password === "") {
+            return alert("Please, Fill all the details.")
+        }
+
+        else {
+            let obj = { mail, password };
+            signupJS.push(obj);
+            localStorage.setItem("signupLS", JSON.stringify(signupJS));
+            return alert("Signup Successful.")
+        }
+    }
+
+    function Reset(){
+       document.querySelector("#fname").value="";
+       document.querySelector("#lname").value="";
+       document.querySelector("#mail").value="";
+       document.querySelector("#cmail").value="";
+       document.querySelector("#phone").value="";
+       document.querySelector("#password").value="";
+
+
+    }
+</script>
