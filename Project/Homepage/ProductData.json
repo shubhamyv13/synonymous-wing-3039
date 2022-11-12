@@ -196,7 +196,7 @@
     },
   
     {
-      "id": 24,
+      "id": 17,
       "brand": "Eucalyptus Spearmint",
       "type": "Bath Soak",
       "img": "Media/Home Page/p24.webp",
@@ -208,7 +208,7 @@
       "bs": 248
     },
     {
-      "id": 25,
+      "id": 18,
       "brand": "A Thousand Wishes",
       "type": "Fine Fragrance Mist",
       "img": "Media/Home Page/p25.webp",
@@ -220,7 +220,7 @@
       "bs": 10
     },
     {
-      "id": 26,
+      "id": 19,
       "brand": "A Thousand Wishes",
       "type": "Ultimate Hydration Body Cream",
       "img": "Media/Home Page/p26.webp",
@@ -232,7 +232,7 @@
       "bs": 2481
     },
     {
-      "id": 27,
+      "id": 20,
       "brand": "A Thousand Wishes",
       "type": "Daily Nourishing Body Lotion",
       "img": "Media/Home Page/p27.webp",
@@ -243,7 +243,7 @@
       "fc": "Woodsy"
     },
     {
-      "id": 28,
+      "id": 21,
       "brand": "A Thousand Wishes",
       "type": "Hand Cream",
       "img": "Media/Home Page/p28.jpg",
@@ -255,7 +255,7 @@
       "bs": 2481
     },
     {
-      "id": 29,
+      "id": 22,
       "brand": "A Thousand Wishes",
       "type": "Bubble Bath",
       "img": "Media/Home Page/p29.jpg",
@@ -267,7 +267,7 @@
       "bs": 248
     },
     {
-      "id": 30,
+      "id": 23,
       "brand": "A Thousand Wishes",
       "type": "Exfoliating Glow Body Scrub",
       "img": "Media/Home Page/p30.webp",
@@ -279,7 +279,7 @@
       "bs": 2481
     },
     {
-      "id": 31,
+      "id": 24,
       "brand": "A Thousand Wishes",
       "type": "Whipped Glow-tion",
       "img": "Media/Home Page/p31.webp",
@@ -291,7 +291,7 @@
       "bs": 24815
     },
     {
-      "id": 32,
+      "id": 25,
       "brand": "After Dark",
       "type": "3-in-1 Hair, Face & Body Wash",
       "img": "Media/Home Page/p32.jpg",
@@ -303,7 +303,7 @@
       "bs": 10
     },
     {
-      "id": 33,
+      "id": 26,
       "brand": "After Dark",
       "type": "Ultimate Hydration Body Cream",
       "img": "Media/Home Page/p33.webp",
@@ -315,7 +315,7 @@
       "bs": 200
     },
     {
-      "id": 34,
+      "id": 27,
       "brand": "After Dark",
       "type": "Body Spray",
       "img": "Media/Home Page/p34.webp",
@@ -327,7 +327,7 @@
       "bs": 248
     },
     {
-      "id": 35,
+      "id": 28,
       "brand": "After Dark",
       "type": "Mini Cologne",
       "img": "Media/Home Page/p35.webp",
@@ -339,7 +339,7 @@
       "bs": 248111
     },
     {
-      "id": 36,
+      "id": 29,
       "brand": "After Dark",
       "type": "Cologne",
       "img": "Media/Home Page/p36.webp",
@@ -350,7 +350,7 @@
       "fc": "Woodsy"
     },
     {
-      "id": 37,
+      "id": 30,
       "brand": "After Dark",
       "type": "Daily Nourishing Body Lotion",
       "img": "Media/Home Page/p37.webp",
@@ -362,7 +362,7 @@
       "bs": 248
     },
     {
-      "id": 38,
+      "id": 31,
       "brand": "Beautiful Day",
       "type": "Ultimate Hydration Body Cream",
       "img": "Media/Home Page/p38.webp",
@@ -374,7 +374,7 @@
       "bs": 24
     },
     {
-      "id": 39,
+      "id": 32,
       "brand": "Beautiful Day",
       "type": "Super Smooth Body Lotion",
       "img": "Media/Home Page/p39.webp",
@@ -386,7 +386,7 @@
       "bs": 10
     },
     {
-      "id": 40,
+      "id": 33,
       "brand": "Beautiful Day",
       "type": "Fine Fragrance Mist",
       "img": "Media/Home Page/p40.webp",
@@ -398,7 +398,7 @@
       "bs": 2
     },
     {
-      "id": 41,
+      "id": 34,
       "brand": "Beautiful Day",
       "type": "Shower Gel",
       "img": "Media/Home Page/p41.webp",
@@ -410,7 +410,7 @@
       "bs": 208
     },
     {
-      "id": 42,
+      "id": 35,
       "brand": "Berry Waffle Cone",
       "type": "Shower Gel",
       "img": "Media/Home Page/p42.jpg",
@@ -422,7 +422,7 @@
       "bs": 2481
     },
     {
-      "id": 43,
+      "id": 36,
       "brand": "Lemon",
       "type": "Lip Balm",
       "img": "Media/Home Page/p43.webp",
@@ -434,7 +434,7 @@
       "bs": 24810
     },
     {
-      "id": 44,
+      "id": 37,
       "brand": "Japanese Cherry Blossom",
       "type": "Fine Fragrance Mist",
       "img": "Media/Home Page/p44.webp",
@@ -446,7 +446,7 @@
       "bs": 248123
     },
     {
-      "id": 45,
+      "id": 38,
       "brand": "Japanese Cherry Blossom",
       "type": "Ultimate Hydration Body Cream",
       "img": "Media/Home Page/p45.webp",
@@ -458,7 +458,7 @@
       "bs": 21
     },
     {
-      "id": 46,
+      "id": 39,
       "brand": "Fairytale",
       "type": "Fine Fragrance Mist",
       "img": "Media/Home Page/p46.webp",
@@ -470,7 +470,7 @@
       "bs": 248
     },
     {
-      "id": 47,
+      "id": 40,
       "brand": "Japanese Cherry Blossom",
       "type": "Daily Nourishing Body Lotion",
       "img": "Media/Home Page/p47.webp",
@@ -482,7 +482,7 @@
       "bs": 2485
     },
     {
-      "id": 48,
+      "id": 41,
       "brand": "Eucalyptus Lavender",
       "type": "Body Wash foam Bath",
       "img": "Media/Home Page/p48.webp",
@@ -494,7 +494,7 @@
       "bs": 248
     },
     {
-      "id": 49,
+      "id": 42,
       "brand": "Ocean",
       "type": "Body Spray",
       "img": "Media/Home Page/p49.jpg",
@@ -506,7 +506,7 @@
       "bs": 208
     },
     {
-      "id": 50,
+      "id": 43,
       "brand": "Sea Island Shore",
       "type": "Fine Fragrance Mist",
       "img": "Media/Home Page/p50.webp",
@@ -518,7 +518,7 @@
       "bs": 20
     },
     {
-      "id": 51,
+      "id": 44,
       "brand": "Sweater Weather",
       "type": "Fine Fragrance Mist",
       "img": "Media/Home Page/p51.webp",
@@ -531,7 +531,7 @@
 
     },
     {
-      "id": 52,
+      "id": 45,
       "brand": "Frosted Coconut Snowball",
       "type": "Daily Nourishing Body Lotion",
       "img": "Media/Home Page/p52.jpg",
@@ -543,7 +543,7 @@
       "bs": 24829
     },
     {
-      "id": 53,
+      "id": 46,
       "brand": "Strawberry Snowflakes",
       "type": "Shower Gel",
       "img": "Media/Home Page/p53.webp",
@@ -555,7 +555,7 @@
       "bs": 243
     },
     {
-      "id": 54,
+      "id": 47,
       "brand": "Winter Candy Apple",
       "type": "Ultimate Hydration Body cream",
       "img": "Media/Home Page/p54.webp",
@@ -567,7 +567,7 @@
       "bs": 20
     },
     {
-      "id": 55,
+      "id": 48,
       "brand": "Winterberry Wonder",
       "type": "Shower Gel",
       "img": "Media/Home Page/p55.jpg",
