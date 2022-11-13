@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <style>
-        #container1 {
+        /* #container1 {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: auto;
@@ -59,10 +59,452 @@
             background-color: #333333;
             color: #ffffff;
             font-weight: bold;
-        }
+        } */
 
         #red1 {
             color: red;
+        }
+
+        #cart {
+            width: 60%;
+            margin: auto;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+        }
+
+        #img1 {
+            border-top: 1px solid #767676;
+        }
+
+        #details>h3:nth-child(1) {
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            color: #333;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        #free {
+            background: #e9fff2;
+            color: #1d6b49;
+            padding: 11px 20px;
+            font-family: Trade Gothic W01 Bold_2, Arial, sans-serif;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        #bule {
+            background-color: #e6f5ff;
+            color: #005699;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            padding: 11px 20px;
+        }
+
+        #details>h3:nth-child(4) {
+            color: #333;
+            font-size: 14px;
+            margin: 9px 0;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #f2f2f2;
+            padding: 11px 20px;
+        }
+
+        #cartNum {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #b4b2b2;
+        }
+
+        #cartNum>div {
+            width: 50%;
+        }
+
+        #cartNum>div:nth-child(1) {
+            display: flex;
+            justify-content: right;
+            padding-right: 30px;
+            width: 60%;
+            height: 100%;
+            margin: auto;
+            align-items: center;
+            border-right: 2px solid #b4b2b2;
+        }
+
+        #cartNum>div:nth-child(2) {
+            padding-left: 30px;
+        }
+
+        #mainCartH {
+            display: flex;
+            width: 100%;
+        }
+
+        #mainCartH>div:nth-child(1) {
+            width: 50%;
+            padding: 11px 20px;
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 14px;
+            margin: 9px 0;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #mainCartH>div:nth-child(2) {
+            width: 10%;
+            padding: 11px 20px;
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 14px;
+            margin: 9px 0;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #mainCartH>div:nth-child(3) {
+            width: 15%;
+            padding: 11px 20px;
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 14px;
+            margin: 9px 0;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #mainCartH>div:nth-child(4) {
+            width: 25%;
+            padding: 11px 20px;
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 14px;
+            margin: 9px 0;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            text-align: center;
+            padding-right: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+
+        #cartItems>div {
+            width: 100%;
+            height: 180px;
+            display: flex;
+        }
+
+        #cartItems>div>.Cdetails {
+            width: 40%;
+            display: flex;
+        }
+
+        #cartItems>div>.Cdetails>div:nth-child(1) {
+            width: 40%;
+            height: 95%;
+
+            display: flex;
+            align-items: center;
+        }
+
+        #cartItems>div>.Cdetails>div:nth-child(1)>.Cimg {
+            width: 100%;
+            height: 95%;
+        }
+
+        #cartItems>div>.Cdetails>div:nth-child(2) {
+            width: 60%;
+        }
+
+        #cartItems>div>.Cprice {
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        #cartItems>div>.Cqty {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cartItems>div>.Cqty>button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            color: #333;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #cartItems>div>.Cqty>span {
+            width: 40px;
+            height: 40px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0px 2px;
+            font-size: 18px;
+        }
+
+        #cartItems>div>.Ctp {
+            width: 25%;
+            display: flex;
+            color: #333;
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        #cartItems>div>.Ctp>div:nth-child(1) {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+
+        #cartItems>div>.Ctp>div:nth-child(2) {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #itemNames,
+        #itemDetails,
+        #itemOffers {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #cartItems>div>.Cdetails>.Cdetails2 {
+            padding: 50px 10px 0px 10px;
+        }
+
+        #itemNames {
+            color: #333;
+            font-size: 15px;
+            line-height: 17px;
+            line-height: 1.0625rem;
+            text-transform: uppercase;
+            font-family: TradeGothicLTW05-Light, Arial, sans-serif;
+            margin: 8px 0px;
+        }
+
+        #itemDetails {
+            color: #666;
+            font-size: 12px;
+            line-height: .75rem;
+            font-family: TradeGothicLTW05-Light, Arial, sans-serif;
+            margin: 8px 0px;
+        }
+
+        #itemOffers {
+            color: #c00;
+            font-size: 12px;
+            line-height: 12px;
+            line-height: .75rem;
+            margin-bottom: 8px;
+            font-family: TradeGothicLTW05-Light, Arial, sans-serif;
+        }
+
+        #CBag {
+            border-bottom: 2px solid #b0aeae;
+        }
+
+        #Update {
+            height: 100px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            border-bottom: 2px solid #b0aeae;
+        }
+
+        #Update>button {
+            font-family: Trade Gothic W01 Regular, Trade Gothic W01 Light, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            cursor: pointer;
+            background-color: #333;
+            border: 1px solid #333;
+            line-height: 33px;
+            color: #fff;
+            text-align: center;
+            padding: 0px 35px;
+        }
+
+        #ATotal {
+            height: 300px;
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        #promotion {
+            width: 34%;
+            height: 110px;
+            border: 1px solid #b0aeae;
+            padding: 10px 20px 20px 20px;
+        }
+
+        #promotion>h3 {
+            color: #333;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        #promotion>p {
+            color: #333;
+            font-size: 12px;
+            line-height: 17px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            text-align: left;
+        }
+
+        #promotion>input {
+            width: 60%;
+            height: 32px;
+            border: 1px solid #b0aeae;
+        }
+
+        #promotion>button {
+            font-family: Trade Gothic W01 Regular, Trade Gothic W01 Light, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            cursor: pointer;
+            background-color: #333;
+            border: 1px solid #333;
+            line-height: 33px;
+            color: #fff;
+            text-align: center;
+            padding: 0px 20px;
+        }
+
+        #AAtotal {
+            width: 52%;
+            height: 230px;
+            background: #f2f2f2;
+            padding-top: 10px;
+        }
+
+        #AAtotal>div {
+            display: flex;
+        }
+
+        #AAtotal>div>div:nth-child(1) {
+            width: 70%;
+        }
+
+        #AAtotal>div>div:nth-child(2) {
+            width: 30%;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        .UB1 {
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            font-size: 12px;
+            padding: 10px 0;
+            color: #333;
+            padding-left: 20px;
+        }
+
+        .UB2 {
+            font-family: Trade Gothic W01 Light, Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px 0;
+            color: #333;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        #AAtotal>#UBimg {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #AAtotal>#UBimg>div:nth-child(1) {
+            width: 43%;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            background-color: #FFC439;
+            border-radius: 2px;
+            margin-left: 10px;
+        }
+
+        #AAtotal>#UBimg>div:nth-child(2) {
+            width: 43%;
+        }
+
+        #AAtotal>#UBimg>div:nth-child(2)>button {
+            width: 100%;
+            color: #fff;
+            background-color: #008527;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            letter-spacing: 1.68px;
+            font-size: 14px;
+            height: 32px;
+            font-weight: bold;
+            border-radius: 2px;
+            margin-left: 15px;
+            border: none;
+        }
+
+        #UB3 {
+            color: #666;
+            line-height: 1.2rem;
+            margin-top: 1em;
+            margin-bottom: 0;
+            font-size: 13px;
+            font-family: TradeGothicLTW05-BoldNo\.2, Arial, sans-serif;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+
+        #cartNum {
+            color: #005699;
+            font-size: 14px;
+            font-family: TradeGothicLTW05-Light, Arial, sans-serif;
+            line-height: 19px;
+        }
+        #cartNum>div>span{
+            color: #005699;
+            font-size: 16px;
+            font-family: TradeGothicLTW05-Light, Arial, sans-serif;
+            line-height: 19px;
+            font-weight: bold;
+            padding: 0px 10px;
         }
     </style>
 </head>
@@ -98,6 +540,31 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="logoCart">
+            <div></div>
+             <div id="logo">
+                <div><a href="index.html"><img width="100%" src="Media\Home Page\logo.jpg" alt=""></a></div>
+             </div>
+             <div id="cart10">
+                <div id="search">
+                    <input placeholder="Search by fragrance or product..." type="text">
+                    <img src="Media\searchButton.svg" alt="">
+                </div>
+                <div id="signIn"><img width="60%" src="Media\SignInpic.svg" alt="">
+                <div id="signSub">
+                    <p><a target="_blank" id="linkSignin" href="signIN.html">Sign In or Sign Up</a></p>
+                    <p>Order Tracking</p>
+                    <p>My Auto Refresh</p>
+                    <p>My Love-it List</p>
+                </div>    
+                
+                </div>
+                <div id="cart123">
+                    <a href="cart.html"><img width="70%" src="Media\CartBag.svg" alt=""></a>
+                </div>
+             </div>
         </div>
 
 
@@ -298,13 +765,91 @@
             </nav>
         </div>
     </header>
-    
-    <div id="total">
-        <h3 id="totalAll"></h3>
-    </div>
-    <div id="container1">
 
+    <div id="cart">
+        <h2>Shopping Bag</h2>
+        <div id="img1">
+            <img width="100%" src="Media\Home Page\cart1.png" alt="">
+        </div>
+
+        <div id="details">
+            <h3>ITEMS IN SHOPPING BAG</h3>
+            <h3 id="free">You'll get 1 item(s) for FREE!</h3>
+            <h3 id="bule">Need it sooner? Choose Buy Online Pick Up In Store!</h3>
+            <h3>YOUR SHOPPING AND PICKUP CHOICES</h3>
+            <div id="cartNum">
+                <div><span id="TotalQt"></span> Items added for Shipping</div>
+                <div id="Sectopmostchild">
+                    <div>
+                        <div>
+                            <span><img
+                                    src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1667952255130/images/svg-icons/bopis-icon-small.svg?yocs=o_s_"
+                                    alt=""></span>
+                        </div>
+                        <div>
+                            <span>PICK UP IN STORE</span>
+                            <a href=""><span>Set Store</span></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainCart">
+            <div id="mainCartH">
+                <div>ITEM</div>
+                <div>PRICE</div>
+                <div>QTY</div>
+                <div>TOTAL PRICE</div>
+            </div>
+
+            <div id="cartItems">
+            </div>
+
+            <div id="Update">
+                <button id="UB">UPDATE BAG</button>
+            </div>
+
+            <div id="ATotal">
+                <div id="promotion">
+                    <h3>PROMOTION CODE</h3>
+                    <p>Only one code can be applied per order.</p>
+                    <input type="text">
+                    <button>APPLY</button>
+                </div>
+                <div id="AAtotal">
+                    <div>
+                        <div class="UB1">MERCHANDISE SUBTOTAL</div>
+                        <div class="UB1" id="UBtotal"></div>
+                    </div>
+                    <div>
+                        <div class="UB1">ESTIMATED SHIPPING & HANDLING- Standard</div>
+                        <div class="UB1">$6.99</div>
+                    </div>
+                    <div>
+                        <div class="UB1">SALES TAX</div>
+                        <div class="UB1">$7.40</div>
+                    </div>
+                    <div>
+                        <div class="UB2">ORDER TOTLA (USD)</div>
+                        <div class="UB2" id="UBtotal2"></div>
+                    </div>
+                    <div id="UBimg">
+                        <div><img width="30%" src="Media\Home Page\payment1.png" alt=""></div>
+                        <div><button>CHECKOUT</button></div>
+                    </div>
+                    <div id="UB3">International Shoppers: All prices are displayed and processed in US Dollars</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="img2">
+            <img width="100%" src="Media\Home Page\cart2.png" alt="">
+        </div>
     </div>
+
 
 
     <hr>
@@ -322,7 +867,7 @@
                         <button id="submit">SUBMIT</button>
                     </div>
 
-                    <label for="" class="foot-data">Get Connected</label>
+                    <!-- <label for="" class="foot-data">Get Connected</label> -->
 
                 </div>
                 <div>
@@ -386,77 +931,122 @@
 
     let cartobj2 = JSON.parse(localStorage.getItem("cartobjLS")) || {};
 
-    let total=0;
+    document.querySelector("#UB").addEventListener("click", total12);
+
+    Cartqty(cartJS2);
+
+    function Cartqty(cartJS2){
+         
+        let tcq=0;
+
+        cartJS2.forEach((elem) => {
+    
+            tcq+= cartobj2[elem.id];
+        });
+
+        document.querySelector("#TotalQt").innerText= tcq;
+        DisplayData(cartJS2);
+    }
 
     DisplayData(cartJS2);
 
     function DisplayData(cartJS2) {
-        document.querySelector("#container1").innerHTML = "";
-        cartJS2.forEach((elem,i) => {
-            
-            total+= (elem.price*(cartobj2[elem.id]));
+
+        document.querySelector("#cartItems").innerHTML = "";
+        cartJS2.forEach((elem, i) => {
+
+            let divB = document.createElement("div");
+            divB.setAttribute("id", "CBag");
             let div1 = document.createElement("div");
+            div1.setAttribute("class", "Cdetails");
+            let div11 = document.createElement("div");
+            div11.setAttribute("class", "Cdetails1");
             let img = document.createElement("img");
+            img.setAttribute("class", "Cimg");
             img.src = elem.img;
-            let div2 = document.createElement("div");
+            div11.append(img);
+
+            let div12 = document.createElement("div");
+            div12.setAttribute("class", "Cdetails2");
             let name = document.createElement("h3");
-            name.setAttribute("class", "h3");
+            name.setAttribute("id", "itemNames");
             name.innerText = elem.brand;
             let details = document.createElement("p");
-            details.setAttribute("class", "p1");
+            details.setAttribute("id", "itemDetails");
             details.innerText = elem.category;
-            let price = document.createElement("h3");
-            price.setAttribute("class", "h3");
-            price.innerText = "$" + elem.price;
             let offer = document.createElement("p");
-            offer.setAttribute("class", "p1");
-            offer.style.color = "red";
+            offer.setAttribute("id", "itemOffers");
             offer.innerText = elem.details;
+
+            div12.append(name, details, offer);
+
+
+            div1.append(div11, div12);
+
+            let div2 = document.createElement("div");
+            div2.setAttribute("class", "Cprice");
+            div2.innerText = "$" + elem.price;
+
+
+            let div3 = document.createElement("div");
+            div3.setAttribute("class", "Cqty");
             let plus = document.createElement("button");
             plus.innerHTML = "+";
+
             plus.addEventListener("click", function () {
                 cartobj2[elem.id]++;
-                
+
                 localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
-                total+= (elem.price*(cartobj2[elem.id]));
+                Cartqty(cartJS2);
                 DisplayData(cartJS2);
+
             })
+
             let quant = document.createElement("span");
             quant.innerText = cartobj2[elem.id];
             let subt = document.createElement("button");
             subt.innerHTML = "-";
+
             subt.addEventListener("click", function () {
                 if (cartobj2[elem.id] > 1) {
                     cartobj2[elem.id]--;
                     localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
-                    total-= (elem.price*(cartobj2[elem.id]));
+                    Cartqty(cartJS2);
                     DisplayData(cartJS2);
                 }
-                else if(cartobj2[elem.id]==1){
+                else if (cartobj2[elem.id] == 1) {
                     delete cartobj2[elem.id];
                     localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
-                    total-= (elem.price*(cartobj2[elem.id]));
                     Deleter(i);
-                    
+
                 }
             })
-            let remove = document.createElement("button");
-            remove.innerText = "Remove";
-            remove.addEventListener("click", function (event) {
+
+            div3.append(plus, quant, subt);
+
+
+            let div4 = document.createElement("div");
+            div4.setAttribute("class", "Ctp");
+            let div41 = document.createElement("div");
+            div41.innerText = elem.price * (cartobj2[elem.id]);
+            let div42 = document.createElement("div");
+            div42.innerText = "X";
+
+            div42.addEventListener("click", function (event) {
                 event.target.parentNode.parentNode.remove();
                 Deleter(i);
             });
-            remove.addEventListener("click", function () {
+            div42.addEventListener("click", function () {
                 delete cartobj2[elem.id];
                 localStorage.setItem("cartobjLS", JSON.stringify(cartobj2));
             })
 
-            div2.append(name, details, price, offer, plus, quant, subt, remove);
-            div1.append(img, div2);
-            document.querySelector("#totalAll").innerText= total;
-            document.querySelector("#container1").append(div1);
-        });
+            div4.append(div41, div42);
+            divB.append(div1, div2, div3, div4);
+            document.querySelector("#cartItems").append(divB);
+            
 
+        });
     }
 
     function Deleter(i) {
@@ -465,6 +1055,28 @@
         localStorage.setItem("cartLS", JSON.stringify(cartJS2));
         DisplayData(cartJS2);
     }
+
+    total12(cartJS2);
+    function total12(cartJS2) {
+
+
+        let a = cartJS2.reduce((acc, elem) => {
+
+            let ab = elem.price * cartobj2[elem.id];
+
+            return acc + ab;
+        },0);
+
+        document.querySelector("#UBtotal").innerText = "$" + a;
+        
+        let b = (a + 6.99 + 7.44);
+        let c = b.toFixed(1);
+        document.querySelector("#UBtotal2").innerText = "$" + c;
+        DisplayData(cartJS2);
+    }
+
+
+
 
 
 </script>
