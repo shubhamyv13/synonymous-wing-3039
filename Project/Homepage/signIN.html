@@ -152,6 +152,31 @@
             </div>
         </div>
 
+        <div id="logoCart">
+            <div></div>
+             <div id="logo">
+                <div><a href="index.html"><img width="100%" src="Media\Home Page\logo.jpg" alt=""></a></div>
+             </div>
+             <div id="cart10">
+                <div id="search">
+                    <input placeholder="Search by fragrance or product..." type="text">
+                    <img src="Media\searchButton.svg" alt="">
+                </div>
+                <div id="signIn"><img width="60%" src="Media\SignInpic.svg" alt="">
+                <div id="signSub">
+                    <p><a  id="linkSignin" href="signIN.html">Sign In or Sign Up</a></p>
+                    <p>Order Tracking</p>
+                    <p>My Auto Refresh</p>
+                    <p>My Love-it List</p>
+                </div>    
+                
+                </div>
+                <div id="cart123">
+                    <a target="_blank" href="cart.html"><img width="70%" src="Media\CartBag.svg" alt=""></a>
+                </div>
+             </div>
+        </div>
+
 
         <div id="Menu">
             <nav>
@@ -355,7 +380,7 @@
 
 
     <div id="first">
-        <img width="100%" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_" alt="">
+        <img width="100%" src="Media\Home Page\sign-in_d.png" alt="">
     </div>
     <div id="third"><h2>Sign In or Sign Up</h2></div>
     <div id="sec">
@@ -367,14 +392,14 @@
             
             <div>
                 <label  class="l1" for="">Email Address</label>
-                <input required id="mail" class="i1" type="text">
+                <input required id="mail" class="i1" type="email">
                 <label class="l1" for="">Password</label>
                 <input required id="password" class="i1" type="password">
                 <span><a id="forget" href="">Forgor Password</a></span>
                 <input id="i3" type="checkbox">
                 <label class="l1" for="">Remember Me</label>
                 <p class="l1"><a href="">Privacy Policy</a></p>
-                <div class="button"><button id="signIn">SIGN IN</button></div>
+                <div class="button"><button id="signIN">SIGN IN</button></div>
             </div>
 
             
@@ -385,7 +410,7 @@
                 <p>Create an account to access the best of your favorite store</p>
             </div>
             <div>
-                <img width="100%" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0f47b7b9/images/loyalty/boc-launch-prospects_lacb_0.jpg?yocs=s_" alt="">
+                <img width="100%" src="Media\Home Page\sign-in2.jpg" alt="">
                 <div class="button"><button><a target="blank"
               href="CreateAccount.html">CREATE AN ACCOUNT</a></button></div>
             </div>
@@ -411,7 +436,7 @@
                         <button id="submit">SUBMIT</button>
                     </div>
 
-                    <label for="" class="foot-data">Get Connected</label>
+                    <!-- <label for="" class="foot-data">Get Connected</label> -->
 
                 </div>
                 <div>
@@ -470,17 +495,20 @@
 <script>
     signupJS2= JSON.parse(localStorage.getItem("signupLS")) || [];
 
-    document.querySelector("#signIn").addEventListener("click", signIN);
+    document.querySelector("#signIN").addEventListener("click", signIn);
 
-    document.querySelector("#signIn").addEventListener("click", Reset);
+    document.querySelector("#signIN").addEventListener("click", Reset);
 
-    function signIN(){
+
+    function signIn(){
 
         let email= document.querySelector("#mail").value;
+        console.log(email);
         let pass= document.querySelector("#password").value;
+        console.log(pass);
 
-        if(email==="" || pass===""){
-            return alert("Fill the Details");
+        if(email=="" || pass==""){
+            return alert("Fill all Fields.");
         }
 
         else{
@@ -496,7 +524,6 @@
         }
     }
  
-
     function Reset(){
         document.querySelector("#mail").value="";
         document.querySelector("#password").value="";

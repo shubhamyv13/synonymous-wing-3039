@@ -181,7 +181,7 @@
     margin-bottom: 30px;
 }
 
-#Dream {
+/* #Dream {
     display: flex;
     justify-content: space-between;
 }
@@ -202,9 +202,10 @@
     width: 40%;
     height: 150px;
     margin: auto;
+    margin-top: 40px;
     padding-top: 20px;
     border: 2px solid black;
-}
+} */
 
 #holiday {
     width: 80%;
